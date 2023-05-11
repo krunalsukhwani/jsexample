@@ -1,3 +1,5 @@
+export let yourName = "Jose";
+
 export function squareValue(n){
     return n * n;
 }
