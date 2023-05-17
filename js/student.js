@@ -10,5 +10,20 @@ class Student {
     }
 }
 
-let firstStudent = new Student("Louie");
-console.log(firstStudent.toString()); 
+class Centennial extends Student{
+
+    constructor(studentName,program){
+        super(studentName);
+        this.program = program;
+    }
+
+    toString(){
+        return "Name: " + this.studentName + "    Program: " + this.program;
+    }
+}
+
+//let firstStudent = new Student("Louie");
+//console.log(firstStudent.toString()); 
+
+let centennialStudent = new Centennial("Armando","Sofware Engineering Technician");
+console.log(centennialStudent.toString());
